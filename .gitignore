@@ -1,0 +1,6 @@
+.DS_Store
+.wrangler/
+p/
+v1-ids.txt
+paste-v1-redirect.caddy
+deploy.sh

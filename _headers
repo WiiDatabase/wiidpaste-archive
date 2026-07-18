@@ -1,0 +1,15 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  Content-Security-Policy: default-src 'none'; base-uri 'none'; form-action 'none'; connect-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; frame-ancestors 'none'
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), microphone=(), payment=(), usb=()
+
+/js/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/css/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/p/*
+  Cache-Control: public, max-age=2592000, immutable
