@@ -71,8 +71,12 @@
 		} else if (formatter === 'syntaxhighlighting') {
 			renderedEl.className = 'pv-body';
 			var pre = document.createElement('pre');
-			pre.className = 'prettyprint';
-			pre.innerHTML = window.PR ? PR.prettyPrintOne(escapeHtml(text)) : escapeHtml(text);
+			var code = document.createElement('code');
+			code.className = 'hljs';
+			var result = window.hljs ? hljs.highlightAuto(text) : null;
+			if (result) code.innerHTML = result.value;
+			else code.textContent = text;
+			pre.appendChild(code);
 			renderedEl.appendChild(pre);
 			toggleBtn.hidden = false;
 		} else {

@@ -97,7 +97,6 @@ article {
 .pv-body, .pv-raw { padding: 16px; margin: 0; }
 
 .pv-raw,
-pre.prettyprint,
 .pv-body pre {
 	font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 	font-size: 13px;
@@ -107,7 +106,12 @@ pre.prettyprint,
 	border: 0;
 }
 
-pre.prettyprint { padding: 16px; }
+.pv-body pre code.hljs {
+	padding: 16px;
+	white-space: pre-wrap;
+	word-break: break-word;
+	background: transparent;
+}
 
 .pv-body.pv-md { line-height: 1.6; }
 .pv-body.pv-md pre {
